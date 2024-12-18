@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Orji Kamdilichukwu Miracle</title>
+  <link rel="stylesheet" href="contact.css"> <script src="contact.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+</head>
+<body class="bg-black text-white">
+  <nav class="nav fixed w-full bg-black bg-opacity-90 p-4 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold slide-in-left">KM</div>
+      <div class="space-x-6 slide-in-right">
+        <a href="index.html" class="nav-link hover:text-blue-400">Home</a>
+        <a href="about.html" class="nav-link hover:text-blue-400">About</a>
+        <a href="work.html" class="nav-link hover:text-blue-400">Work</a>
+        <a href="#" class="nav-link text-blue-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="min-h-screen pt-24 px-4">
+    <div class="container mx-auto max-w-2xl fade-in">
+      <h1 class="text-4xl font-bold text-center mb-8">Get In Touch</h1>
+      <p class="text-center mb-12">Ready to start your project? Fill out the form below and I'll get back to you as soon as possible.</p>
+
+      <div id="alertMessage" class="hidden">
+        <div class="p-4 rounded-lg text-center"></div>
+      </div>
+
+      <form id="contactForm" action="process.php" method="POST" class="space-y-6">
+        <input type="hidden" name="csrf_token" id="csrf_token">  
+        
+        <div class="grid grid-cols-1 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-medium mb-2">Full Name *</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="100"
+              class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400"
+              data-validation="required|min:2|max:100">
+            <span class="error-message text-red-400 text-sm mt-1"></span>
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium mb-2">Email Address *</label>
+            <input type="email" id="email" name="email" required
+              class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400"
+              data-validation="required|email">
+            <span class="error-message text-red-400 text-sm mt-1"></span>
+          </div>
+
+          <div>
+            <label for="phone" class="block text-sm font-medium mb-2">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9+\-\s()]+"
+              class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400"
+              data-validation="required|phone">
+            <span class="error-message text-red-400 text-sm mt-1"></span>
+          </div>
+          
+          <div>
+            <label for="service" class="block text-sm font-medium mb-2">Service Needed *</label>
+            <select id="service" name="service" required
+              class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400"
+              data-validation="required">
+              <option value="">Select a service</option>
+              <option value="wordpress">WordPress Development</option>
+              <option value="digital-marketing">Digital Marketing</option>
+              <option value="seo">SEO Optimization</option>
+              <option value="social-media">Social Media Management</option>
+            </select>
+            <span class="error-message text-red-400 text-sm mt-1"></span>
+          </div>
+          
+          <div>
+            <label for="message" class="block text-sm font-medium mb-2">Your Message *</label>
+            <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1000"
+              class="w-full p-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-400"
+              data-validation="required|min:10|max:1000"></textarea>
+            <span class="error-message text-red-400 text-sm mt-1"></span>
+            <div>
+              <span id="messageCharCount">0</span>/1000 characters
+            </div>
+          </div>
+          
+          <!--<div class="h-captcha" data-sitekey="aa48e2e8-e5e0-432e-bbfa-b1c80668a420"></div> -->
+          
+          <button type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+            <span>Send Message</span>
+            <div class="hidden ml-3 w-5 h-5 border-t-2 border-white border-solid rounded-full animate-spin"></div>
+          </button>
+          </div>
+          </form>
+          
+          <div class="mt-16 text-center space-y-4">
+            <h2 class="text-2xl font-bold mb-6">Other Ways to Reach Me</h2>
+            <div>📱 +234-915-069-7816</div>
+            <div>📱 +234-816-327-9112</div>
+            <div>✉️ orjimiracle3@gmail.com</div>
+          </div>
+          </div>
+          </section>
+          </body>
+          </html>

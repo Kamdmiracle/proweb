@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orji Kamdilichukwu Miracle - Work</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <style>
+        .project-card {
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .stat-number {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .achievement-item {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black bg-opacity-90 p-4 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">KM</div>
+            <div class="space-x-6">
+                <a href="index.html" class="hover:text-blue-400">Home</a>
+                <a href="about.html" class="hover:text-blue-400">About</a>
+                <a href="work.html" class="hover:text-blue-400">Work</a>
+                <a href="contact.html" class="hover:text-blue-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-[50vh] flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-4xl">
+            <h1 class="text-6xl font-bold mb-6">My Work</h1><br>
+            <p class="text-xl text-gray-400">Transforming brands through digital excellence</p>
+        </div>
+    </section><br><br><br>
+    
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="stat-number">
+                    <div class="text-5xl font-bold text-blue-400 mb-2">50+</div>
+                    <div class="text-xl">Projects Completed</div>
+                </div>
+                <div class="stat-number">
+                    <div class="text-5xl font-bold text-blue-400 mb-2">95%</div>
+                    <div class="text-xl">Client Satisfaction</div>
+                </div>
+                <div class="stat-number">
+                    <div class="text-5xl font-bold text-blue-400 mb-2">3+</div>
+                    <div class="text-xl">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/api/placeholder/600/300" alt="E-commerce Project" class="w-full h-48 object-cover"/>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">E-commerce Revolution</h3>
+                        <p class="text-gray-400 mb-4">Transformed an online retail presence with custom WordPress development and strategic digital marketing.</p>
+                        <div class="space-y-2">
+                            <div class="achievement-item flex items-center">
+                                <span class="text-green-400 mr-2">✓</span>
+                                <span>250% increase in organic traffic</span>
+                            </div>
+                            <div class="achievement-item flex items-center">
+                                <span class="text-green-400 mr-2">✓</span>
+                                <span>45% improvement in conversion rate</span>
+                            </div>
+                            <div class="achievement-item flex items-center">
+                                <span class="text-green-400 mr-2">✓</span>
+                                <span>Mobile-first optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/api/placeholder/600/300" alt="Digital Marketing Campaign" class="w-full h-48 object-cover"/>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">Social Media Growth</h3>
+                        <p class="text-gray-400 mb-4">Comprehensive social media marketing campaign for a lifestyle brand.</p>
+                        <div class="space-y-2">
+                            <div class="achievement-item flex items-center">
+                                <span class="text-green-400 mr-2">✓</span>
+                                <span>100K+ new followers across platforms</span>
+                            </div>
+                            <div class="achievement-item flex items-center">
+                                <span class="text-green-400 mr-2">✓</span>
+                                <span>35% increase in engagement rate</span>
+                            </div>
+                            <div class="achievement-item flex items-center">
+                                <span class="text-green-400 mr-2">✓</span>
+                                <span>Successful influencer partnerships</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Achievements -->
+    <section class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center">Client Success Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Client 1 -->
+                <div class="bg-black p-6 rounded-lg">
+                    <img src="/api/placeholder/150/80" alt="Client Logo" class="mb-6 mx-auto"/>
+                    <div class="space-y-4">
+                        <div class="achievement-item">
+                            <h4 class="text-xl font-bold text-blue-400">SEO Optimization</h4>
+                            <p>Achieved first page rankings for key industry terms</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Client 2 -->
+                <div class="bg-black p-6 rounded-lg">
+                    <img src="/api/placeholder/150/80" alt="Client Logo" class="mb-6 mx-auto"/>
+                    <div class="space-y-4">
+                        <div class="achievement-item">
+                            <h4 class="text-xl font-bold text-blue-400">Website Redesign</h4>
+                            <p>Reduced bounce rate by 40% with improved UX</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Client 3 -->
+                <div class="bg-black p-6 rounded-lg">
+                    <img src="/api/placeholder/150/80" alt="Client Logo" class="mb-6 mx-auto"/>
+                    <div class="space-y-4">
+                        <div class="achievement-item">
+                            <h4 class="text-xl font-bold text-blue-400">Marketing Campaign</h4>
+                            <p>Generated 300% ROI on ad spend</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Initialize GSAP ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate stats numbers
+        gsap.utils.toArray('.stat-number').forEach(stat => {
+            gsap.to(stat, {
+                scrollTrigger: {
+                    trigger: stat,
+                    start: "top 80%",
+                },
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: "power2.out"
+            });
+        });
+
+        // Animate achievement items
+        gsap.utils.toArray('.achievement-item').forEach((item, i) => {
+            gsap.to(item, {
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 85%",
+                },
+                opacity: 1,
+                x: 0,
+                duration: 0.6,
+                delay: i * 0.1,
+                ease: "power2.out"
+            });
+        });
+    </script>
+</body>
+</html>
